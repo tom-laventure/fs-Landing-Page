@@ -1,0 +1,14 @@
+.image{
+    flex: 1;
+    display: flex;
+    /* margin: 0 3%; */
+    align-content: space-around;
+    justify-content: center;
+    height: 50px;
+}
+
+.image img{
+    max-width: 100%;
+    height: auto;
+    /* filter: brightness(0) invert(1); */
+}

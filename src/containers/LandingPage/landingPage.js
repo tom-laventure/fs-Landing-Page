@@ -6,6 +6,7 @@ import CTA from "../../components/CTA";
 import classes from './landingPage.module.css';
 import Footer from "../../components/Footer/footer";
 import TheForm from "../../components/Form/form";
+import Carousel from "../../components/Carousel/carousel";
 
 const LandingPage = (props) => {
 
@@ -37,15 +38,23 @@ const LandingPage = (props) => {
           </div>
         </div>
         <div className={classes.stats}>
-          <div className={classes.blurb}>
-            <h2>Get more eyes on your Digital Flyers</h2>
-            <p>Our unmatched hyper-local content and distribution channels enable us to connect national advertisers to high quality audiences daily.</p>
+          <div className={classes.statsContent}>
+            <div className={classes.blurb}>
+              <h2>Get more eyes on your Digital Flyers</h2>
+              <p>Our unmatched hyper-local content and distribution channels enable us to connect national advertisers to high quality audiences daily.</p>
+            </div>
+            <Banner version="Audience" />
+            <div className={classes.blurb}>
+              <h1>123 +</h1>
+              <h1>Million</h1>
+              <h2>monthly online pageviews</h2>
+            </div>
           </div>
-          <Banner version="Audience" />
-          <div className={classes.blurb}>
-            <h1>123 +</h1>
-            <h1>Million</h1>
-            <h2>monthly online pageviews</h2>
+          <div>
+            <hr />
+          </div>
+          <div>
+            <Carousel />
           </div>
         </div>
         <div className={classes.form}>
@@ -58,7 +67,6 @@ const LandingPage = (props) => {
         </div>
       </div>
       <Footer />
-
     </div>
   );
 }
