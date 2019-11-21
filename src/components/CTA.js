@@ -29,7 +29,7 @@ function CTA(props){
   }
 
   return(
-    <Button onClick={handleClickEvent} className={`cta ${props.isActive? 'active': ''} ${props.cls}`} variant={props.variant} disabled={props.hasOwnProperty('disabled')? true: false}>
+    <Button onClick={handleClickEvent} className={`cta ${props.isActive? 'active': ''} ${props.cls}`} variant={props.variant} disabled={props.hasOwnProperty('disabled')? true: false} size={width}>
       <div className="text">
         {text}
       </div>

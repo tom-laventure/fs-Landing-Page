@@ -37,27 +37,28 @@ const LandingPage = (props) => {
           </div>
         </div>
         <div className={classes.stats}>
-          <div>
+          <div className={classes.blurb}>
             <h2>Get more eyes on your Digital Flyers</h2>
             <p>Our unmatched hyper-local content and distribution channels enable us to connect national advertisers to high quality audiences daily.</p>
           </div>
           <Banner version="Audience" />
-          <div>
+          <div className={classes.blurb}>
             <h1>123 +</h1>
             <h1>Million</h1>
             <h2>monthly online pageviews</h2>
           </div>
         </div>
         <div className={classes.form}>
-          <Banner version="Form"/>
-          <TheForm/>
+          <Banner version="Form" />
+          <TheForm />
+          <div>
+            <Banner version="Circles" />
+            <Banner version="Squares" />
+          </div>
         </div>
       </div>
       <Footer />
-      <div>
-        <Banner/>
-        <Banner/>
-      </div>
+
     </div>
   );
 }

@@ -5,6 +5,8 @@ import Hero from '../../assets/imgs/hero-illustration.png'
 import Feature from '../../assets/imgs/feature-illustration.png'
 import Audience from '../../assets/imgs/illustration-audience.svg'
 import Form from '../../assets/imgs/illustration-form.svg'
+import Squares from '../../assets/imgs/squares.svg'
+import Circles from '../../assets/imgs/circles.svg'
 
 const Banner = (props) => {
     let theSrc;
@@ -21,6 +23,12 @@ const Banner = (props) => {
             break;
         case "Form":
             theSrc = Form;
+            break;
+        case "Circles":
+            theSrc = Circles;
+            break;
+        case "Squares":
+            theSrc = Squares;
             break;
     }
 
