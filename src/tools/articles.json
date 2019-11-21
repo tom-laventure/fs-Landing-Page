@@ -1,0 +1,66 @@
+{
+  "tags": [
+    {
+      "id": "img",
+      "tag": "[img",
+      "attr": [
+        {
+          "key":"url"
+        },
+        {
+          "key": "class"
+        },
+        {
+          "key": "hash",
+          "req": "ext"
+        },
+        {
+          "key": "ext"
+        }
+      ]
+    },
+    {
+      "id":"link",
+      "tag":"[link",
+      "end": "[end]",
+      "attr": [
+        {
+          "key":"url"
+        },
+        {
+          "key":"target",
+          "opt": ["blank"]
+        }
+      ]
+    },
+    {
+      "id":"video",
+      "tag":"[video",
+      "attr": [
+        {
+          "key":"url"
+        }
+      ]
+    },
+    {
+      "id": "list",
+      "tag": "[list]",
+      "end":"[end]"
+    },
+    {
+      "id": "header",
+      "tag": "[header",
+      "end": "[end]",
+      "attr": [
+        {
+          "key": "size",
+          "opt": ["xl","lg","md","sm","xs","xxs"]
+        },
+        {
+          "key": "weight",
+          "opt": ["bold","semibold","normal"]
+        }
+      ]
+    }
+  ]
+}

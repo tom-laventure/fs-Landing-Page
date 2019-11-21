@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import './assets/styles/global.css'
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import LandingPage from './containers/LandingPage/landingPage';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

@@ -1,0 +1,102 @@
+.navbar-wrapper {
+  position:fixed;
+  width: 100vw;
+  height: 20vh;
+  background: #fff;
+  top:0;
+  left: 0;
+  z-index:2;
+  box-shadow:0 2px 8px 0 rgba(0, 0, 0, 0.1), 0 4px 16px 0 rgba(0, 0, 0, 0.12);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.nav-container{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  height: 100%;
+}
+.navbar-wrapper .nav-row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-wrapper .item {
+  flex:1;
+}
+.navbar-wrapper .item.half{
+  flex:0.5;
+}
+
+.navbar-wrapper .nav-row.main{
+  align-items: flex-end;
+  padding-bottom: 1vh;
+  justify-content: space-between;
+}
+.navbar-wrapper .nav-row.mobile{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--neutral);
+}
+@media (max-width: 575.98px){
+  .navbar-wrapper {
+    max-height: 150px;
+  }
+  .navbar-wrapper.secondary {
+    max-height: 100px;
+  }
+  .navbar-wrapper .nav-row.main{
+    align-items: flex-end;
+    padding-bottom: 5px;
+
+  }
+  .navbar-wrapper.secondary .nav-row.main {
+    align-items: center;
+  }
+
+  .navbar-wrapper .nav-row.mobile{
+    align-items: center;
+    padding-bottom:0;
+  }
+}
+@media (min-width: 576px){
+
+  .navbar-wrapper {
+    position:fixed;
+    width: 100vw;
+    height: 10vh;
+    background: #fff;
+    top:0;
+    left: 0;
+    z-index:2;
+    display: flex;
+    justify-content: space-around;
+    max-height: 100px;
+  }
+  .navbar-wrapper .item {
+    flex:1
+  }
+  .navbar-wrapper .nav-row.main{
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .navbar-wrapper.secondary .nav-row.main .item .subtext{
+    display: flex;
+    align-items: center;
+
+  }
+  .navbar-wrapper.secondary .nav-row.main .item .subtext p{
+    margin-bottom:0;
+    color: var(--neutral-darker);
+    font-size: var(--pg);
+    font-weight: var(--secondary-font-weight);
+  }
+  .navbar-wrapper.secondary .nav-row.main .item .ctabtn .cta{
+    font-weight: var(--secondary-font-weight);
+  }
+}

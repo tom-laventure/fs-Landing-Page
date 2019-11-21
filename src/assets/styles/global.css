@@ -1,0 +1,248 @@
+:root {
+  /* color theme new format */
+  /* Primaries */
+  --primary-dark: #830000;
+  --primary: #E20000 ;
+  --primary-light: #FC8C8C;
+
+  /* secondary */
+  --secondary-dark: #D56200;
+  --secondary: #FFC400;
+  --secondary-light: #F7E57F;
+
+  /* Neutral */
+  --neutral-darkest: #000000;
+  --neutral-darker: #505050;
+  --neutral-dark: #808080;
+  --neutral: #BABABA;
+  --neutral-light: #D2D2D2;
+  --neutral-lighter: #F4F4F4;
+  --neutral-lightest: #FFFFFF;
+
+  /* Icon Theme */
+  --warning: #FF0000;
+  --verified: #15BD94;
+
+  --pagenate-color:  rgba(225,225,225,0.5);
+  --pagenate-bg: rgba(0,0,0,0.3);
+
+  /* font family */
+  --primary-font-family: 'Lato', sans-serif;
+  --secondary-font-family: 'Lato', sans-serif;
+
+  /* font weight */
+  --primary-font-weight: bold;
+  --secondary-font-weight: 600;
+  --neutral-font-weright: normal;
+  /*
+   color theme (Old format )
+   This will be removed
+  */
+  --glay1: #656565;
+  --glay2: #707070;
+  --glay3: #EDEDED;
+  --glay4: #262526;
+  --glay5: #D9D9D9;
+  --glay6: #F5F5F7;
+  --glay7: #969696;
+  --black : #000;
+  --theme: #33871B;
+  --hero: #333333;
+  --theme-err: #FF9900; /* secondary */
+  --theme-err2:#663399; /* primary */
+
+  --white: #FFF;
+
+  /* font size */
+  --hero-xl: 3.5em;
+  --hero1: 3em;
+  --hero2: 2.5em;
+  --hero3: 2em;
+  --hero4: 1.5em;
+  --pg-lg: 1.2em;
+  --pg: 1em;
+  --pg-sm: 0.8em;
+  --pg-xs: 0.5em;
+  --pg-xxs: 0.3em;
+
+  /* width */
+  --max: 1200px;
+
+  /* old font family */
+  --font-item: 'Lato', sans-serif;
+  --font-others: 'Lato', sans-serif;
+
+  /* header text orient */
+  --header-text-align: left;
+  --cetner-text-align: center;
+
+  /* font weight */
+  --hero-weight: bold;
+}
+body.noscroll{
+  overflow:hidden;
+  position: fixed;
+  width: 100%;
+}
+
+#fs-wrapper{
+  background: var(--neutral-lighter);
+}
+#fs-wrapper .reg-btn {
+  box-shadow:none;
+}
+
+#fs-wrapper .content-body{
+  margin-top: 5vh;
+}
+#fs-wrapper .content-body.hub{
+  margin-top: 10vh;
+  padding-top: 50px;
+}
+#fs-wrapper .content-body .content-row {
+  margin-top: 5vh;
+  text-align: left;
+}
+#fs-wrapper .content-body{
+  max-width:var(--max);
+  margin-left: auto;
+  margin-right:auto;
+}
+#fs-wrapper .content-body .content-row .hashtags{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#fs-wrapper .content-body .content-row .hashtags .hash{
+  padding-left:2%;
+  padding-right:2%;
+}
+
+#fs-wrapper .content-body .content-row .hashtags .hash p {
+  background: rgba(225,225,225, 0.5);
+}
+
+#fs-wrapper .geo-wrapper .reg-btn,
+#fs-wrapper .thumbnail-wrapper .reg-btn {
+  border: 1px solid var(--theme);
+  background: transparent;
+  color: var(--theme);
+  border-radius: 0;
+  width: 50%;
+}
+#fs-wrapper .thumbnail-wrapper .reg-btn{
+  border:2px solid var(--theme);
+  font-weight: var(--hero-weight);
+}
+#fs-wrapper .geo-wrapper .reg-btn:hover,
+#fs-wrapper .thumbnail-wrapper .reg-btn:hover{
+  background: var(--theme);
+  color:var(--white);
+}
+#fs-wrapper .geo-wrapper .reg-btn:hover img{
+    filter: invert(0) sepia(0) saturate(1) hue-rotate(0deg) brightness(1);
+}
+
+#fs-wrapper .hpi-wrapper .hpi-header .hpi-header-hero p,
+#fs-wrapper .thumbnails-wrapper .thumbnails-header h3,
+#fs-wrapper .thumbnails-wrapper .thumbnails-container .header h3,
+#fs-wrapper .categories-container .header .hero h3,
+#fs-wrapper .mystore-container .header .hero h3{
+  text-align: var(--header-text-align);
+  font-size: var(--hero2);
+  color: var(--primary);
+  font-family: var(--primary-font-family);
+  font-weight: var(--primary-font-weight);
+}
+#fs-wrapper .hpi-wrapper .hpi-header .hpi-header-subtext p,
+#fs-wrapper .categories-container .header .subtext p,
+#fs-wrapper .thumbnails-wrapper .thumbnails-container .header .subtext p,
+#fs-wrapper .mystore-container .header .subtext p {
+  font-size: var(--pg);
+  color: var(--neutral-darker);
+  font-weight: var(--secondary-font-weight);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+#fs-wrapper .schedule .a {
+  fill: none;
+}
+#fs-wrapper .schedule .b {
+  fill: var(--primary);
+}
+@media (max-width: 575.98px){
+  #fs-wrapper .content-body.hub{
+    margin-top: 10vh;
+    padding-top: 50px;
+  }
+  #fs-wrapper .thumbnail-wrapper .reg-btn{
+    background: var(--theme);
+    color: var(--white);
+  }
+  #fs-wrapper .hpi-wrapper .hpi-header .hpi-header-hero p,
+  #fs-wrapper .thumbnails-wrapper .thumbnails-header h3,
+  #fs-wrapper .thumbnails-wrapper .thumbnails-container .header h3,
+  #fs-wrapper .categories-container .header .hero h3,
+  #fs-wrapper .mystore-container .header .hero h3{
+    text-align: var(--cetner-text-align);
+    font-size: var(--hero4);
+    color: var(--primary);
+    font-family: var(--primary-font-family);
+    font-weight: var(--primary-font-weight);
+    margin-bottom: 0;
+  }
+  #fs-wrapper .hpi-wrapper .hpi-header .hpi-header-subtext p,
+  #fs-wrapper .thumbnails-wrapper .thumbnails-header .subtext p,
+  #fs-wrapper .thumbnails-wrapper .thumbnails-container .header .subtext p,
+  #fs-wrapper .mystore-container .header .subtext p{
+    text-align: var(--cetner-text-align);
+  }
+  #fs-wrapper .hpi-wrapper .hpi-header .hpi-header-subtext,
+  #fs-wrapper .thumbnails-wrapper .thumbnails-header .subtext{
+    margin-bottom: 3vh;
+  }
+  #fs-wrapper .hpi-wrapper .hpi-header .hpi-header-hero,
+  #fs-wrapper .hpi-wrapper .hpi-header .hpi-header-subtext,
+  #fs-wrapper .thumbnails-wrapper .thumbnails-header,
+  #fs-wrapper .categories-container .header .hero,
+  #fs-wrapper .mystore-container .header .hero{
+    width: 100%;
+  }
+}
+#fs-wrapper .paginate {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+#fs-wrapper .paginate .dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background: var(--neutral-dark);
+}
+#fs-wrapper .paginate .dot.active{
+  background: var(--primary);
+}
+@media (min-width: 576px){
+  #fs-wrapper .thumbnail-wrapper .reg-btn{
+    width: 61%;
+  }
+  #fs-wrapper .thumbnail-wrapper .thumbnail-contents .thumbnail-smoke:hover .reg-btn {
+    background: var(--theme);
+    color: var(--white);
+  }
+
+}
+
+@media (min-width: 992px){
+  #fs-wrapper .content-body{
+    /* padding-left: 15px;
+    padding-right:15px; */
+  }
+}

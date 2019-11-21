@@ -1,0 +1,138 @@
+.reg-btn {
+  width: 100%;
+}
+.cls-btn {
+  width: 30px;
+  height: 30px;
+}
+
+.reg-btn .btn-container {
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: center;
+}
+.reg-btn .btn-container .left {
+  flex: 1;
+  text-align: right;
+  padding-right: 1vw;
+  height: 60%;
+}
+.reg-btn .btn-container .right {
+  flex: 2;
+  text-align: left;
+  font-size: var(--pg-sm);
+}
+
+.cta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: transparent;
+}
+.cta.btn-primary {
+  border:1px solid var(--primary);
+  color: var(--neutral-lightest);
+  background: var(--primary);
+  font-size: var(--pg-sm);
+  margin:5px;
+}
+.cta.btn-filter-primary {
+  border:1px solid var(--primary);
+  color: var(--primary);
+  font-size: var(--pg-sm);
+  margin:5px;
+}
+.cta.btn-primary-light{
+  border:1px solid var(--neutral-lightest);
+  background: var(--neutral-lightest);
+  color: var(--primary);
+  font-size: var(--pg-sm);
+  margin:5px;
+}
+.cta.btn-primary:hover,
+.cta.btn-primary:not(:disabled):not(.disabled).active{
+  border:1px solid var(--primary-dark);
+  background: var(--primary-dark);
+  color: var(--neutral-lightest);
+  font-size: var(--pg-sm);
+  margin:5px;
+}
+.cta.btn-primary-light:hover,
+.cta.btn-primary-light:not(:disabled):not(.disabled).active{
+  border:1px solid var(--primary-light);
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: var(--pg-sm);
+  margin:5px;
+}
+.cta.btn-secondary,
+.cta.btn-secondary-primary{
+  border:1px solid var(--neutral-darker);
+  color: var(--neutral-darker);
+  font-size: var(--pg-sm);
+  font-weight: var(--secondary-font-weight);
+  margin:5px;
+}
+.cta.btn-filter-primary:not(:disabled):not(.disabled).active,
+.cta.btn-filter-primary:hover,
+.cta.btn-secondary-primary:not(:disabled):not(.disabled).active,
+.cta.btn-secondary-primary:hover{
+  background: var(--primary);
+  border:1px solid var(--neutral-lightest);
+  color: var(--neutral-lightest);
+}
+.cta.btn-secondary:not(:disabled):not(.disabled).active,
+.cta.btn-secondary:hover{
+  background: var(--secondary);
+  border:1px solid var(--secondary);
+  color: var(--neutral-darker);
+}
+.cta .text{
+  flex: 2;
+}
+.cta .x{
+  display: none;
+}
+
+.cta.btn-filter-primary:not(:disabled):not(.disabled).active .x,
+.cta.btn-secondary:not(:disabled):not(.disabled).active .x
+{
+  display: unset;
+  flex:1;
+  max-width: 15px;
+}
+
+.cta .x svg {
+  width: 12px;
+  height: 12px;
+  padding-left: 5px;
+}
+.cta.btn-filter-primary:hover .x svg,
+.cta.btn-filter-primary:not(:disabled):not(.disabled).active .x svg,
+.cta.btn-filter-primary:focus .x svg {
+  fill: var(--neutral-lightest);
+}
+.cta.btn-secondary:hover .x svg,
+.cta.btn-secondary:not(:disabled):not(.disabled).active .x svg,
+.cta.btn-secondary:focus .x svg {
+  fill: var(--neutral-darker);
+}
+
+
+button.catItem div.text{
+font-size: var(--pg-lg);
+}
+
+button.filter.btn{
+  padding-left: 0;
+  padding-right: 0; 
+}
+
+button.filter.btn div.text{
+  font-size: var(--pg);
+  padding-left: 0;
+  padding-right: 0; 
+}
