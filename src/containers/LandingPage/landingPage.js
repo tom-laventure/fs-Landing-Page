@@ -16,15 +16,19 @@ const LandingPage = (props) => {
       <div className={classes.main}>
         <div className={classes.banner}>
           <div className={classes.blurb}>
-            <h1>Bring your Flyers to life</h1>
-            <p>Flyer Story turns conventional flyers in an engaging digital experience for real customers.</p>
-            <CTA text="REQUEST A DEMO" />
+            <div className="p-2">
+              <h1>Bring your Flyers to life</h1>
+              <p>Flyer Story turns conventional flyers in an engaging digital experience for real customers.</p>
+            </div>
+            <div className={classes.bannerButton}>
+              <CTA text="REQUEST A DEMO" padding="w-50" />
+            </div>
           </div>
-          <Banner version="Hero" />
+          <Banner version="Hero" width="75%" />
         </div>
         <div className={classes.feature}>
           <div>
-            <Banner version="Feature" />
+            <Banner version="Feature" width="75%" />
           </div>
           <div className={classes.blurb}>
             <h2>Key Features</h2>
@@ -35,19 +39,20 @@ const LandingPage = (props) => {
               <li>Reaches French/Chinese audience</li>
               <li>Cohesive media delivery</li>
             </ul>
+            <CTA text="REQUEST A DEMO" padding="w-50" />
           </div>
         </div>
         <div className={classes.stats}>
           <div className={classes.statsContent}>
-            <div className={classes.blurb}>
+            <div className={`${classes.blurb} ${classes.statsBlurbLeft}`}>
               <h2>Get more eyes on your Digital Flyers</h2>
               <p>Our unmatched hyper-local content and distribution channels enable us to connect national advertisers to high quality audiences daily.</p>
             </div>
-            <Banner version="Audience" />
-            <div className={classes.blurb}>
+            <Banner version="Audience" width="100%"/>
+            <div className={`${classes.blurb} ${classes.statsBlurbRight}`}>
               <h1>123 +</h1>
-              <h1>Million</h1>
-              <h2>monthly online pageviews</h2>
+              <h2>MILLION</h2>
+              <h3>monthly online pageviews</h3>
             </div>
           </div>
           <div>
