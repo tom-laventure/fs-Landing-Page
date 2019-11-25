@@ -7,10 +7,11 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .content{
-    padding: 0 5%;
+    padding: 50px 5%;
 }
 
 .arrow{
@@ -18,3 +19,33 @@
     align-content: center;
 }
 
+.arrow img{
+    max-width: 35px;   
+}
+
+.mobileCarouselItem{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.carouselMobileMedia{
+    /* height: 125%; */
+}
+
+@media(max-width: 800px){
+    .carousel{
+        display: flex;
+        /* height: 400px; */
+    }
+
+
+    .media{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+    
+}

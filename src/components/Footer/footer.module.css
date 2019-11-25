@@ -1,3 +1,15 @@
 .main{
     background-color: var(--primary);
+    height: 273px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.row{
+    color: var(--neutral-lightest);
+}
+
+.img{
+    filter: brightness(0) invert(1);
 }

@@ -14,30 +14,60 @@ h2{
     font-weight: bold;
 }
 
+h3{
+    font-weight: bold;
+}
+
+ul{
+    padding-left: 20px;
+        list-style: none; /* Remove default bullets */
+}
+
+  
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: red; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+p, li{
+    font-weight: bold;
+    font-size: 14px;
+}
+
 .main{
     padding-top: 130px;
     width: 100%;
 }
 
 .blurb{
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    max-width: 300px;
+    max-width: 400px;
 }
 
 .banner{
     display: flex;
     margin: 0 10%;
-    justify-content: center
+}
+
+.banner .blurb{
+    max-width: 98%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .feature{
     display: flex;
-    margin: 0 10%;
-    padding: 10% 0;
+    padding: 5% 0% 0 0%;
+    background-color: var(--neutral-lighter);
 }
 
 .feature h2{
@@ -48,13 +78,14 @@ h2{
     display: flex;
     flex-direction: column;
     background-color: var(--secondary);
-    padding: 10% 0;
+    padding: 10% 0 0 0;
 }
 
 
 .statsBlurbRight, .statsBlurbLeft{
     max-width: 50%;
-    width: 45%
+    width: 45%;
+    align-self: flex-start;
 }
 
 .statsBlurbLeft h2{
@@ -78,20 +109,28 @@ h2{
     margin:0;
 }
 
+.statsBlurbRight h3{
+    font-weight: bold;
+}
+
 .statsContent{
     display: flex;
-    margin: 0 10%;
+    margin: 0 5%;
     justify-content: center;
+    height: 400px;
 }
 .form{
     display: flex;
-    margin: 0 10%;
+    margin: 0 5%;
     /* width: 80%; */
     justify-content: center;
     padding: 10% 0;
 }
 
-
+.formImages{
+    width: 30%;
+    position: relative;
+}
 
 hr {
     display: block;
@@ -102,13 +141,65 @@ hr {
     border-style: inset;
     border-width: 1px;
     border: black 1px solid;
-  }
+}
 
-  .image{
+.image{
       height: 100px;
       width: 100px;
-  }
+}
 
-  .bannerButton{
+.bannerButton{
     padding-left: 2%
+}
+
+.formBanner{
+    display: flex;
+    justify-content: right;
+    
+}
+
+.icon{
+    color: var(--primary)
+}
+
+@media(max-width: 769px){
+    .banner, .feature, .statsContent, .form{
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    .blurb, .statsBlurbLeft, .statsBlurbRight{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10%;
+    }
+
+    .mobileFeatureBlurb{
+        padding: 0;
+    }
+
+    .statsContent{
+        height: auto;
+    }
+
+    .statsBlurbRight{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 800px){
+    .statsBlurbRight h1{
+        font-size: 6em;
+        line-height: 80%;
+    }
+    
+    .statsBlurbRight h2{
+        font-size: 3.5em;
+    }
+
+    .statsBlurbRight h3{
+        font-size: 20px;
+    }
 }

@@ -1,4 +1,7 @@
 :root {
+  
+
+
   /* color theme new format */
   /* Primaries */
   --primary-dark: #830000;
@@ -246,3 +249,19 @@ body.noscroll{
     padding-right:15px; */
   }
 }
+
+.carousel-indicators{
+  bottom: -50px;
+}
+
+.carousel.slide{
+  padding-top: 20px;
+  min-height: 200px;
+}
+
+.carousel-inner{
+  height: 100%;
+  /* display: flex;
+  align-items: center; */
+}
+

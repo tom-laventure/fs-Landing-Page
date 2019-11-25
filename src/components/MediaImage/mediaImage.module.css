@@ -4,11 +4,22 @@
     /* margin: 0 3%; */
     align-content: space-around;
     justify-content: center;
-    height: 50px;
 }
 
 .image img{
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
-    /* filter: brightness(0) invert(1); */
+    filter: brightness(0) invert(1);
+}
+
+@media(max-width: 1000px){
+    .image img{
+        max-width: 150px;;
+    }   
+}
+
+@media(max-width: 575px){
+    .image img{
+        max-width: 150px;;
+    }   
 }

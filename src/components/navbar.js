@@ -2,18 +2,20 @@ import React from 'react'
 import CTA from './CTA';
 import bootstrap from 'react-bootstrap'
 import '../assets/styles/navbar.css';
+import Logo from '../assets/imgs/flyer-story-logo.svg'
 
 const navbar = () => {
     return(
         <div className="navbar-wrapper secondary">
         <div className="nav-container">
           <div className="nav-row main">
-            <div className="item">
+            <div className="item d-flex justify-content-center justify-content-sm-start px-5">
+              <img src={Logo}/>
             </div>
-            <div className="item d-none d-sm-flex">
-              <div className="ctabtn">
+            <div className="item d-none d-sm-flex justify-content-end px-5 ">
+              <div className="ctabtn ">
                 <CTA
-                  text="HELLO"
+                  text="REQUEST A DEMO"
                   onClick={() => {}}
                   variant="primary"
                 />

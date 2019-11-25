@@ -18,7 +18,7 @@ import X from '../assets/components/close-x';
 
 function CTA(props){
   const { text, hasLink, url, icon, width, height, cls } = props;
-
+  let Block;
   const handleClickEvent = () => {
     if(hasLink && url){
       window.open(url, '_blank');
@@ -28,8 +28,12 @@ function CTA(props){
     }
   }
 
+  if(props.varient === "Form"){
+    Block = "block"
+  }
+
   return(
-    <Button onClick={handleClickEvent} className={`cta ${props.padding} ${props.isActive? 'active': ''} ${props.cls}`} variant={props.variant} disabled={props.hasOwnProperty('disabled')? true: false} size={width}>
+    <Button onClick={handleClickEvent} className={`cta ${props.padding} ${props.isActive? 'active': ''} ${props.cls} `} variant={props.variant}  block={props.block}>
       <div className="text">
         {text}
       </div>
