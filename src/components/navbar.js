@@ -11,7 +11,7 @@ const navbar = (props) => {
         <div className="nav-container">
           <div className="nav-row main">
             <div className="item d-flex justify-content-center justify-content-sm-start px-5">
-              <img src={Logo}/>
+              <img src={Logo} href=""/>
             </div>
             <div className="item d-none d-sm-flex justify-content-end px-5 ">
               <div className="ctabtn ">

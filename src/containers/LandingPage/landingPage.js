@@ -11,7 +11,7 @@ import Carousel from "../../components/Carousel/carousel";
 const LandingPage = (props) => {
   const toForm = () => {
     window.location.href = '#form'
-    window.scrollBy(0, -90);
+    window.scrollBy(0, -60);
   }
 
   return (
