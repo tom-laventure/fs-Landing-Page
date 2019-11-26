@@ -58,7 +58,7 @@ p, li{
 }
 
 .banner .blurb{
-    max-width: 98%;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     margin: auto;
@@ -79,6 +79,7 @@ p, li{
     flex-direction: column;
     background-color: var(--secondary);
     padding: 10% 0 0 0;
+    background-position: bottom 200px;
 }
 
 
@@ -175,6 +176,10 @@ hr {
         padding: 0 10%;
     }
 
+    .statsBlurbLeft{
+        padding-bottom: 5%;
+    }
+
     .mobileFeatureBlurb{
         padding: 0;
     }
@@ -189,9 +194,9 @@ hr {
 
 }
 
-@media(max-width: 800px){
+@media(max-width: 845px){
     .statsBlurbRight h1{
-        font-size: 6em;
+        font-size: 5.5em;
         line-height: 80%;
     }
     
@@ -202,4 +207,5 @@ hr {
     .statsBlurbRight h3{
         font-size: 20px;
     }
+
 }

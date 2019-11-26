@@ -53,3 +53,11 @@
 .Squares img{
     max-width: 40px;
 }
+
+
+@media(min-width: 769px){
+    .Feature img{
+        position: relative;
+        top: 40px;
+    }
+}

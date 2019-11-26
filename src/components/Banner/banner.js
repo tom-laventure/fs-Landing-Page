@@ -20,6 +20,7 @@ const Banner = (props) => {
             break;
         case "Feature":
             theSrc = Feature;
+            theClass = classes.Feature
             break;
         case "Audience":
             theSrc = Audience

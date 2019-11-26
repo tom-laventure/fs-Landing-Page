@@ -3,8 +3,9 @@ import CTA from './CTA';
 import bootstrap from 'react-bootstrap'
 import '../assets/styles/navbar.css';
 import Logo from '../assets/imgs/flyer-story-logo.svg'
+import { tsPropertySignature } from '@babel/types';
 
-const navbar = () => {
+const navbar = (props) => {
     return(
         <div className="navbar-wrapper secondary">
         <div className="nav-container">
@@ -16,7 +17,7 @@ const navbar = () => {
               <div className="ctabtn ">
                 <CTA
                   text="REQUEST A DEMO"
-                  onClick={() => {}}
+                  onClick={props.btnClick}
                   variant="primary"
                 />
               </div>

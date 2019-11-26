@@ -4,6 +4,7 @@
     padding: 3%;
     text-align: left;
     z-index: 1;
+    background-color: var(--neutral-lightest);
 }
 
 @media(max-width:770px){

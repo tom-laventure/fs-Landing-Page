@@ -9,10 +9,14 @@ import TheForm from "../../components/Form/form";
 import Carousel from "../../components/Carousel/carousel";
 
 const LandingPage = (props) => {
+  const toForm = () => {
+    window.location.href = '#form'
+    window.scrollBy(0, -90);
+  }
 
   return (
     <div id="d-flex flex-column h-100">
-      <Navbar />
+      <Navbar btnClick={() => toForm()}/>
       <div className={classes.main}>
         <div className={classes.banner}>
           <div className={classes.blurb}>
@@ -21,7 +25,7 @@ const LandingPage = (props) => {
               <p>Flyer Story turns conventional flyers in an engaging digital experience for real customers.</p>
             </div>
             <div className={`${classes.bannerButton} d-none d-md-block mb-4`}>
-              <CTA desktopOnly="true" text="REQUEST A DEMO" padding="p-50" />
+              <CTA desktopOnly="true" text="REQUEST A DEMO" padding="p-50" onClick={() => toForm()} />
             </div>
           </div>
           <div className="d-none d-md-flex">
@@ -31,7 +35,7 @@ const LandingPage = (props) => {
             <Banner version="Hero" width="100%" />
           </div>
           <div className="d-block d-md-none d-flex justify-content-center my-4 px-5">
-            <CTA text="REQUEST A DEMO" block />
+            <CTA text="REQUEST A DEMO" block onClick={() => toForm()} />
           </div>
         </div>
         <div className={`d-md-flex d-none justify-content-center ${classes.icon}`}>
@@ -56,9 +60,9 @@ const LandingPage = (props) => {
               <Banner version="Feature" width="100%" />
             </div>
             <div className="d-none d-md-flex">
-              <CTA text="REQUEST A DEMO" padding="p-50" />
+              <CTA text="REQUEST A DEMO" padding="p-50" onClick={() => toForm()}/>
             </div>
-            <div className="d-flex d-md-none py-3 justify-content-center px-5">
+            <div className="d-flex d-md-none py-3 justify-content-center px-5" onClick={() => toForm()}>
               <CTA text="REQUEST A DEMO" block/>
             </div>
           </div>
@@ -83,7 +87,7 @@ const LandingPage = (props) => {
             <Carousel />
           </div>
         </div>
-        <div className={classes.form}>
+        <div className={classes.form} id="form">
           <Banner desktopOnly={true} version="Form" />
           <TheForm />
           <div className={classes.formImages}>

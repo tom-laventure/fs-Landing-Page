@@ -265,3 +265,22 @@ body.noscroll{
   align-items: center; */
 }
 
+.btn-primary:not(:disabled):not(.disabled):active{
+  background-color: var(--primary);
+  border-color: var(--primary)
+
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+  box-shadow: none;
+}
+
+.btn-primary:hover{
+  background-color: var(--primary);
+  border-color: var(--primary)
+}
+
+.btn-primary{
+  border-color: none
+}
+

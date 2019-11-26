@@ -100,7 +100,7 @@ const TheCarousel = () => {
                 newIndex = theIndex - 1;
             }
             else {
-                newIndex = 4;
+                newIndex = 5;
             }
             setIndex(newIndex)
             theGallery = getGallery(index, theGap)
