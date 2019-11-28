@@ -59,7 +59,7 @@ const LandingPage = (props) => {
             <div className="d-block d-md-none">
               <Banner version="Feature" width="100%" />
             </div>
-            <div className="d-none d-md-flex  pl-xl-5 ml-xl-4">
+            <div className={`d-none d-md-flex justify-content-xl-center ${classes.featureButton}`}>
               <CTA text="REQUEST A DEMO" padding="p-50" onClick={() => toForm()}/>
             </div>
             <div className="d-flex d-md-none py-3 justify-content-center px-5" onClick={() => toForm()}>

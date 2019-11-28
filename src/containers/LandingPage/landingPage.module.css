@@ -239,4 +239,15 @@ hr {
         position: relative;
         left: -80px;
     }
+
+    .featureButton button{
+        position: relative;
+        left: -40px;
+    }
+
+    .feature h2{
+        padding-left: 0;
+        position: relative;
+        left: -20px;
+    }
 }
