@@ -64,6 +64,9 @@ p, li{
     margin: auto;
 }
 
+.banner .blurb div{
+    max-width: 300px;
+}
 .feature{
     display: flex;
     padding: 5% 0% 0 0%;
@@ -84,10 +87,11 @@ p, li{
 
 
 .statsBlurbRight, .statsBlurbLeft{
-    max-width: 50%;
+    max-width: 400px;
     width: 45%;
     align-self: flex-start;
 }
+
 
 .statsBlurbLeft h2{
     color: var(--primary-dark);
@@ -163,7 +167,7 @@ hr {
     color: var(--primary)
 }
 
-@media(max-width: 769px){
+@media(max-width: 768px){
     .banner, .feature, .statsContent, .form{
         flex-direction: column;
         margin-left: 0;
@@ -191,6 +195,15 @@ hr {
     .statsBlurbRight{
         text-align: center;
     }
+
+    .banner .blurb{
+        max-width: 700px;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+    
 
 }
 

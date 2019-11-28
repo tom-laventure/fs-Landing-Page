@@ -125,7 +125,6 @@ const TheCarousel = () => {
                 </Carousel.Caption>
             </Carousel.Item>)
         });
-        console.log(mobileCarousel)
         return mobileCarousel
     }
 

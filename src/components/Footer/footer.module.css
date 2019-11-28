@@ -13,3 +13,7 @@
 .img{
     filter: brightness(0) invert(1);
 }
+
+.link a{
+    color: var(--neutral-lightest);
+}

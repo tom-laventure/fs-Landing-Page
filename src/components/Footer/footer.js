@@ -19,17 +19,17 @@ const Footer = () => {
                         <div className="pr-5">
                             Follow us
                         </div>
-                        <div className="flex-center">
-                            <a className="fb-ic">
+                        <div className={`flex-center ${classes.link}`}>
+                            <a className="fb-ic" href="https://www.facebook.com/pg/glaciermediadigital/posts/">
                                 <i className="fab fa-facebook-f fa-md white-text mr-3 fa-2x"> </i>
                             </a>
-                            <a className="tw-ic">
+                            <a className="tw-ic" href="https://www.instagram.com/glaciermediadigital/">
                                 <i className="fab fa-twitter fa-lg white-text mr-3 fa-2x"> </i>
                             </a>
-                            <a className="ins-ic">
+                            <a className="ins-ic" href="https://www.pinterest.ca/glaciermedialmp/">
                                 <i className="fab fa-instagram fa-lg white-text mr-3 fa-2x"> </i>
                             </a>
-                            <a className="pin-ic">
+                            <a className="pin-ic" href="https://www.instagram.com/glaciermediadigital/">
                                 <i className="fab fa-pinterest fa-lg white-text fa-2x"> </i>
                             </a>
                         </div>

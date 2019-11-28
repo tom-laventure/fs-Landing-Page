@@ -26,14 +26,12 @@
 .mobileCarouselItem{
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 50px;
+    row-gap: 40px;
+    column-gap: 20px;
     width: 100%;
     height: auto;
 }
 
-.carouselMobileMedia{
-    /* height: 125%; */
-}
 
 @media(max-width: 800px){
     .carousel{

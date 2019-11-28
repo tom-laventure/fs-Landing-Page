@@ -33,7 +33,7 @@ function CTA(props){
   }
 
   return(
-    <Button onClick={handleClickEvent} className={`cta ${props.padding} ${props.isActive? 'active': ''} ${props.cls} `} variant={props.variant}  block={props.block}>
+    <Button onClick={handleClickEvent} className={`cta ${props.padding} ${props.isActive? 'active': ''} ${props.cls} `} variant={props.variant} type={props.theType} block={props.block}>
       <div className="text">
         {text}
       </div>
