@@ -12,7 +12,9 @@ const Footer = () => {
                             Powered by:
                         </div>
                         <div className=" flex-center">
+                            <a href="https://www.glaciermediadigital.ca/">
                             <img src={Glacier} className={classes.img} height="50px" width="150px"/>
+                            </a>
                         </div>
                     </div>
                     <div className="col-md-6 py-3 py-md-5 d-flex justify-content-center align-items-center">

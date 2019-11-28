@@ -5,32 +5,26 @@ import CTA from '../CTA'
 import axios from 'axios'
 
 const TheForm = () => {
-    // const [name, setName] = useState();
-    // const [email, setEmail] = useState();
+    const [formSubmitted, setFormSubmitted] = useState(false);
 
     const handleSubmit = event => {
         event.preventDefault();
+        let url = "http://" + window.location.hostname + ":1337";
+
         let email = document.getElementById("email").value
         let name = document.getElementById("name").value
-        axios.post('http://localhost:1337', 
-        {
-            theName: name,
-            theEmail: email
-        }).then((res) => {
-            console.log(res);
-        }).catch((error) => {
-            alert(error)
-        });
+        axios.post(url,
+            {
+                theName: name,
+                theEmail: email
+            }).then((res) => {
+                console.log(res);
+                setFormSubmitted(true)
+            }).catch((error) => {
+                alert(error)
+            });
         document.getElementById("theForm").reset()
         event.preventDefault();
-    }
-
-    const handleNameChange = (e) => {
-        // setName(e.target.value)
-    }
-
-    const handleEmailChange = (e) => {
-        // setEmail(e.target.value)
     }
 
     return (
@@ -51,8 +45,12 @@ const TheForm = () => {
             </Form.Group>
 
             <div className="d-flex justify-content-center">
-                <CTA text="REQUEST A DEMO" width="lg" padding="p-100"  block={true} theType="submit" />
+                <CTA text="REQUEST A DEMO" width="lg" padding="p-100" block={true} theType="submit" />
             </div>
+            {formSubmitted ? <div className="text-danger d-flex flex-column align-items-center pt-3">
+                <p className="mb-0">Thanks for requesting a demo,</p>
+                <p className="mb-0">we will be in touch soon!</p>
+                </div> : null}
         </Form>
 
     )

@@ -73,6 +73,10 @@ p, li{
     background-color: var(--neutral-lighter);
 }
 
+.feature .blurb{
+    /* margin-left: 5%; */
+}
+
 .feature h2{
     padding-left: 10px;
 }
@@ -154,7 +158,8 @@ hr {
 }
 
 .bannerButton{
-    padding-left: 2%
+    padding-left: 2%;
+
 }
 
 .formBanner{
@@ -182,6 +187,10 @@ hr {
 
     .statsBlurbLeft{
         padding-bottom: 5%;
+        max-width: 575px;
+        display: flex;
+        align-items: center;
+        margin: auto;
     }
 
     .mobileFeatureBlurb{
@@ -204,7 +213,9 @@ hr {
         align-items: center;
     }
     
-
+    .banner .blurb div{
+        max-width: 525px;
+    }
 }
 
 @media(max-width: 845px){
@@ -221,4 +232,11 @@ hr {
         font-size: 20px;
     }
 
+}
+
+@media(min-width: 1200px){
+    .bannerButton{
+        position: relative;
+        left: -80px;
+    }
 }

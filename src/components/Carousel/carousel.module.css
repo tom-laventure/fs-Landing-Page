@@ -23,6 +23,10 @@
     max-width: 35px;   
 }
 
+.arrow img:hover{
+    cursor: pointer;
+}
+
 .mobileCarouselItem{
     display: grid;
     grid-template-columns: auto auto;

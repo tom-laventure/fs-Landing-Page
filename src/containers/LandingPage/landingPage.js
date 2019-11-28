@@ -19,7 +19,7 @@ const LandingPage = (props) => {
       <Navbar btnClick={() => toForm()}/>
       <div className={classes.main}>
         <div className={classes.banner}>
-          <div className={classes.blurb}>
+          <div className={` ${classes.blurb} align-items-xl-center`}>
             <div className="p-2">
               <h1>Bring your Flyers to life</h1>
               <p>Flyer Story turns conventional flyers in an engaging digital experience for real customers.</p>
@@ -46,7 +46,7 @@ const LandingPage = (props) => {
             <Banner version="Feature" width="75%" />
           </div>
           <div className={`${classes.blurb} ${classes.mobileFeatureBlurb}`}>
-            <div className="d-flex flex-column align-items-center align-items-md-start justify-content-center">
+            <div className={`d-flex flex-column align-items-center align-items-md-start align-items-xl-center justify-content-center`}>
               <h2>Key Features</h2>
               <ul>
                 <li>Optimized digital experience for flyers</li>
@@ -59,7 +59,7 @@ const LandingPage = (props) => {
             <div className="d-block d-md-none">
               <Banner version="Feature" width="100%" />
             </div>
-            <div className="d-none d-md-flex">
+            <div className="d-none d-md-flex  pl-xl-5 ml-xl-4">
               <CTA text="REQUEST A DEMO" padding="p-50" onClick={() => toForm()}/>
             </div>
             <div className="d-flex d-md-none py-3 justify-content-center px-5" onClick={() => toForm()}>
