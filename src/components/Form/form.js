@@ -9,7 +9,7 @@ const TheForm = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        let url = "http://" + window.location.hostname + "/backend";
+        let url = "http://" + window.location.hostname + "/backend/";
         if(window.location.hostname.indexOf("localhost") > -1){
             url = "http://" + window.location.hostname + ":1337";
         }
