@@ -9,8 +9,10 @@ const TheForm = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        let url = "http://" + window.location.hostname + ":1337";
-
+        let url = "http://" + window.CloseEvent.hostname + "/backend";
+        if(window.location.hostname.indexOf("localhost") > -1){
+            url = "http://" + window.location.hostname + ":1337";
+        }
         let email = document.getElementById("email").value
         let name = document.getElementById("name").value
         axios.post(url,
@@ -21,7 +23,7 @@ const TheForm = () => {
                 console.log(res);
                 setFormSubmitted(true)
             }).catch((error) => {
-                alert(error)
+                console.log(error)
             });
         document.getElementById("theForm").reset()
         event.preventDefault();

@@ -284,3 +284,6 @@ body.noscroll{
   border-color: none
 }
 
+.carousel-indicators{
+  z-index: 0;
+}
