@@ -55,6 +55,7 @@ p, li{
 .banner{
     display: flex;
     margin: 0 10%;
+    max-width: 1250px;
 }
 
 .banner .blurb{
@@ -90,8 +91,14 @@ p, li{
 }
 
 
-.statsBlurbRight, .statsBlurbLeft{
+.statsBlurbLeft{
     max-width: 400px;
+    width: 45%;
+    align-self: flex-start;
+}
+
+.statsBlurbRight{
+    max-width: 340px;
     width: 45%;
     align-self: flex-start;
 }
@@ -244,10 +251,16 @@ hr {
         position: relative;
         left: -40px;
     }
-
+    .feature{
+        justify-content: center;
+    }
     .feature h2{
         padding-left: 0;
         position: relative;
         left: -20px;
+    }
+    .feature .blurb{
+        position: relative;
+        left: -45px;
     }
 }
