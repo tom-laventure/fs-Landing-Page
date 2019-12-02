@@ -93,7 +93,7 @@ p, li{
 
 .statsBlurbLeft{
     max-width: 400px;
-    width: 45%;
+    width: 50%;
     align-self: flex-start;
 }
 
@@ -101,8 +101,13 @@ p, li{
     max-width: 340px;
     width: 45%;
     align-self: flex-start;
+    text-align: center;
+    margin-left: 2%;
 }
 
+.statsBlurbLeft h2, .statsBlurbLeft p{
+    margin: auto;
+}
 
 .statsBlurbLeft h2{
     color: var(--primary-dark);
@@ -127,6 +132,7 @@ p, li{
 
 .statsBlurbRight h3{
     font-weight: bold;
+    font-size: 26px;
 }
 
 .statsContent{
@@ -189,16 +195,22 @@ hr {
     .blurb, .statsBlurbLeft, .statsBlurbRight{
         width: 100%;
         max-width: 100%;
-        padding: 0 10%;
+        padding: 0 7%;
+        margin-left: 0;
     }
 
     .statsBlurbLeft{
-        padding-bottom: 5%;
-        max-width: 575px;
+        padding-bottom: 10%;
+        max-width: 600px;
         display: flex;
         align-items: center;
         margin: auto;
     }
+
+    .statsBlurbLeft h2{
+        padding-bottom: 5%
+    }
+
 
     .mobileFeatureBlurb{
         padding: 0;
@@ -245,6 +257,11 @@ hr {
     .bannerButton{
         position: relative;
         left: -80px;
+    }
+
+    .banner .blurb{
+        position: relative;
+        left: -20px;
     }
 
     .featureButton button{

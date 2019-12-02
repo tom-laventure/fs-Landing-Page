@@ -1,5 +1,5 @@
 :root {
-  
+  font-family: 'Open Sans', sans-serif;  
 
 
   /* color theme new format */
@@ -30,7 +30,7 @@
   --pagenate-bg: rgba(0,0,0,0.3);
 
   /* font family */
-  --primary-font-family: 'Lato', sans-serif;
+  --primary-font-family: 'Lato Black', sans-serif;
   --secondary-font-family: 'Lato', sans-serif;
 
   /* font weight */
