@@ -66,7 +66,7 @@ p, li{
 }
 
 .banner .blurb div{
-    max-width: 300px;
+    max-width: 350px;
 }
 .feature{
     display: flex;
@@ -107,6 +107,10 @@ p, li{
 
 .statsBlurbLeft h2, .statsBlurbLeft p{
     margin: auto;
+}
+
+.statsBlurbLeft p{
+    font-size: 16px;
 }
 
 .statsBlurbLeft h2{
@@ -170,10 +174,6 @@ hr {
       width: 100px;
 }
 
-.bannerButton{
-    padding-left: 2%;
-
-}
 
 .formBanner{
     display: flex;
@@ -195,7 +195,7 @@ hr {
     .blurb, .statsBlurbLeft, .statsBlurbRight{
         width: 100%;
         max-width: 100%;
-        padding: 0 7%;
+        padding: 0 4%;
         margin-left: 0;
     }
 

@@ -21,8 +21,8 @@ const LandingPage = (props) => {
         <div className={classes.banner}>
           <div className={` ${classes.blurb} align-items-xl-center`}>
             <div className="p-2">
-              <h1>Bring your Flyers to life</h1>
-              <p>Flyer Story turns conventional flyers in an engaging digital experience for real customers.</p>
+              <h1>Bring Your Flyers To Life</h1>
+              <p>Flyer Story turns conventional flyers into an engaging digital experience for real customers.</p>
             </div>
             <div className={`${classes.bannerButton} d-none d-md-block mb-4`}>
               <CTA desktopOnly="true" text="REQUEST A DEMO" padding="p-50" onClick={() => toForm()} />
@@ -50,10 +50,10 @@ const LandingPage = (props) => {
               <h2>Key Features</h2>
               <ul>
                 <li>Optimized digital experience for flyers</li>
-                <li>Flyers centric editorial content</li>
-                <li>Targets hard-to-reach-geography</li>
+                <li>Dynamic flyer editorial</li>
+                <li>Finite targeting</li>
                 <li>Reaches French/Chinese audience</li>
-                <li>Cohesive media delivery</li>
+                <li>Multi-channel media delivery</li>
               </ul>
             </div>
             <div className="d-block d-md-none">
@@ -71,7 +71,7 @@ const LandingPage = (props) => {
           <div className={classes.statsContent}>
             <div className={`${classes.blurb} ${classes.statsBlurbLeft}`}>
               <h2>Get more eyes on your Digital Flyers</h2>
-              <p>Our unmatched hyper-local content and distribution channels enable us to connect national advertisers to high quality audiences daily.</p>
+              <p>Be found wherever your customers are online with the Integrated delivery across our extensive digital network.</p>
             </div>
             <Banner desktopOnly={true} version="Audience" width="100%" />
             <div className={`${classes.blurb} ${classes.statsBlurbRight}`}>
